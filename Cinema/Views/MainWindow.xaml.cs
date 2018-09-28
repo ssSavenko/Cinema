@@ -23,8 +23,7 @@ namespace Cinema.Views
         public MainWindow()
         {
             InitializeComponent();
-
-             DataContext =new MainWindow();
+            
         }
     }
 }

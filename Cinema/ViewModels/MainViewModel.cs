@@ -5,7 +5,7 @@ using System.Text;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.ComponentModel;
-
+using System.Collections;
 
 namespace Cinema.ViewModels 
 {
@@ -23,7 +23,19 @@ namespace Cinema.ViewModels
 
         private void OnPropertyChanged(PropertyChangedEventArgs e)
         {
-            PropertyChanged?.Invoke(this, e);
+           
+        }
+
+        private ICollection<string> Films
+        {
+            get => new Collection<string>();
+            set { }
+        }
+
+        private ICollection<string> Actors
+        {
+            get => new Collection<string>();
+            set { }
         }
     }
 }
